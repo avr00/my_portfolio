@@ -129,10 +129,10 @@ ion-icon {
     color: #365899;
   }
   #ig {
-    color: #1da1f2;
+    color: #c32aa3;
   }
   #twitter {
-    color: #c32aa3;
+    color: #1da1f2;
   }
 
   .img-container {
@@ -175,7 +175,7 @@ ion-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
+    margin: 5px 15px 15px 15px;
   }
   footer li {
     margin: 0 5px;

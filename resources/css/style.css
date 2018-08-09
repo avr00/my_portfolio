@@ -3,6 +3,9 @@
   color: rgb(58, 58, 58);
 }
 
+body {
+  margin: 0;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -11,34 +14,41 @@ header {
 }
 
 header ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 header li {
-    margin: 0 5px;
-    font-size: 10px;
+  margin: 0 5px;
+  font-size: 10px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 300;
 }
 
-.description {
-    font-weight: 300;
+.description em {
+  font-weight: 300;
+  font-size: 15px;
 }
-
 
 header a {
   text-decoration: none;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .description {
   text-align: center;
   margin: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.img-container img:hover {
+  opacity:0.95;
 }
 
 .img-container {
@@ -47,7 +57,7 @@ header a {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   overflow-x: hidden;
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 .img-container img {
@@ -76,42 +86,39 @@ footer {
   font-size: 15px;
   bottom: 0;
   height: 200px;
-  margin-top: 200px;
+  margin-top: 150px;
   line-height: 1.7em;
 }
 
 footer h2 {
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
 }
 
 footer p {
-    font-size: 12px;
-    margin: 0;
+  font-size: 15px;
+  margin: 0;
 }
 footer li {
   list-style: none;
 }
 
 footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 footer div {
-    margin: 0 100px;
+  margin: 0 100px;
 }
 
-
-
-
 ion-icon {
-  font-size: 20px;
+  font-size: 30px;
+  transition: color 0.5s;
 }
 
 @media only screen and (max-width: 748px) {
@@ -159,22 +166,22 @@ ion-icon {
     bottom: 0;
     line-height: 1.7em;
     text-align: center;
-    margin: 50px 0;
+    height: 250px;
+    width: 100%;
+    margin-top: 50px;
   }
 
   footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0;
     margin: 20px;
-}
-footer li {
+  }
+  footer li {
     margin: 0 5px;
-}
+  }
 
   ion-icon {
     font-size: 25px;
   }
-
 }
